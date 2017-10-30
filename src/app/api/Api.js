@@ -16,7 +16,7 @@ export const query = async (query: string) => {
 };
 
 export const fetchAuthors = () => {
-    return query(`{ authors { ids, name, twitterHandle} }`)
+    return query(`{ authors { id, name, twitterHandle} }`)
 };
 
 export const fetchAuthor = (authorId) => {

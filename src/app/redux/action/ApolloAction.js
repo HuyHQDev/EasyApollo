@@ -5,7 +5,6 @@ export const fetchAuthors = () => {
     return async (dispatch, getState) => {
         try {
             const authors = await api.fetchAuthors();
-            alert('zoozo');
             dispatch(fetchAuthorsSuccess(authors));
         }
         catch (error) {
