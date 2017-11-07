@@ -1,0 +1,1 @@
+export const API_URL = 'http://172.16.0.206:3000/graphql';

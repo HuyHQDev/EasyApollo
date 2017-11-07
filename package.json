@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "release-android": "cd android && ./gradlew installRelease",
+    "android-menu": "adb shell input keyevent 82"
   },
   "dependencies": {
     "apollo-cache-inmemory": "^1.0.0",
@@ -15,12 +17,17 @@
     "apollo-link-http": "^1.0.0",
     "graphql": "^0.11.7",
     "graphql-tag": "^2.5.0",
+    "prop-types": "^15.5.10",
     "react": "16.0.0-beta.5",
     "react-apollo": "^2.0.0",
     "react-native": "0.49.5",
+    "react-native-datepicker": "^1.6.0",
+    "react-navigation": "^1.0.0-beta.12",
     "react-redux": "^5.0.6",
+    "realm": "^2.0.2",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "babel-jest": "21.2.0",
